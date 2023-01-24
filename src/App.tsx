@@ -1,8 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
 import Home from "./routes/Home";
 import Before from "./routes/Home/Before";
-import After from "./routes/Home/Before/After";
+import UserDetailsCard from "./components/UserDetailsCard";
 import Welcome from "./routes/Home/Welcome";
+import After from "./routes/Home/Before/After";
 
 function App() {
   return (
@@ -12,13 +14,13 @@ function App() {
           <Route index element={<Welcome />} />
           <Route path="welcome" element={<Welcome />} />
           <Route path="before" element={<Before />} >
-            <Route path="after" element={<After />}/>
+            <Route path="after/:username" element={<After />} />
           </Route>
 
           
         </Route>
         
-        {/*Not Found */}<Route path="*" element={<Navigate to={"NAO ENCONTRADO"} />} />
+        <Route path="*" element={<Navigate to={"NAO ENCONTRADO"} />} />
   
       </Routes>
     </BrowserRouter>

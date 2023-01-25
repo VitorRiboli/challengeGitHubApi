@@ -29,6 +29,7 @@ export default function Before() {
 
   function handleFormSubmit(e : any) {
     e.preventDefault();
+
     setName(formData.username);
   }
 

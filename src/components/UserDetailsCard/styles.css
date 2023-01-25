@@ -15,8 +15,6 @@
   padding: 40px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .user-img {
@@ -26,4 +24,48 @@
 
 .user-details {
   width: 80%;
+
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 8px 14px;
 }
+
+.user-details-title {
+  color: #1890FF;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.user-details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.user-details-box-card {
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #737373;
+}
+
+.user-details-box-card p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.user-link {
+  color: #0029ff;
+  cursor: pointer;
+}
+
+.user-details-box-card span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
